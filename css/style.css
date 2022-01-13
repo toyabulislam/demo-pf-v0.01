@@ -1,0 +1,557 @@
+@import 'utilities.css';
+:root{
+    --canvas1:#292929;
+    --canvas2:#d6d6d6;
+    --accent:#e9692c;
+    --font1:rgb(255, 240, 245);
+    --font2:#292929;
+    --font3:#3d3d3d;
+    --font4: #808080;
+}
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+header{
+    background: var(--canvas1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 88%, 0% 100%);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    padding:0;
+    margin: 0;
+}
+section{
+    padding:0;
+    margin: 0;
+}
+.box{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .logo{
+    margin-right: 5rem;
+}
+
+header nav .left a{
+    color: var(--font1);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+header nav .left a:hover{
+    color: var(--accent);
+
+}
+.contact-btn a{
+    text-decoration: none;
+}
+.contact-btn{
+    display: flex;
+    flex-direction: row;
+}
+.contact-btn i{
+    font-size: 30px;
+    color: white;
+}
+.full-site-wrapper{
+    position: relative;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+.shishir{
+    padding: 2rem 3rem;
+}
+.shishir .left img{
+    width: 650px;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+.shishir .right{
+    color: var(--font1);
+}
+.shishir .right h6{
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.shishir .right h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+}
+.shishir .right h1 span{
+    color: var(--accent);
+}
+
+.shishir .right a{
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+a.c-btn{
+    text-decoration: none;
+}
+
+section{
+    padding: 6rem 6rem;
+}
+.about .shishir-coat{
+    width: 350px;
+}
+.about h1{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--canvas1);
+}
+.about h3{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--font3);
+}
+.about p{
+    line-height: 2;
+    color: var(--font4);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.about .link a{
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+.about .link i{
+    background: var(--accent);
+    color: white;
+    font-size: 25px;
+    padding: 7px;
+    transition: all .5s ease;
+}
+.about .link i:hover{
+    background: var(--font2);
+    transform: translateY(-5px);
+}
+
+.about .link img{
+    background: var(--accent);
+    width: 40px;
+    padding: 7px;
+}
+.about .link a:hover{
+    background: var(--canvas1);
+}
+.section-heading{
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+.section-heading h1{
+    color: var(--font2);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.section-heading p{
+    color: var(--font3);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+}
+section.services{
+    background: var(--canvas2);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+section.services .card-wrapper .card{
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+section.services .card-wrapper .card h1{
+    color: var(--font3);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.services .card-wrapper .card p{
+    color: var(--font4);
+    font-size: 1rem;
+    font-weight: 500;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--canvas1);
+}
+section.services .card-wrapper .card:hover h1{
+    color: var(--canvas2);
+    transition: all .5s ease;
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/shishir-grass-ss.jpg);
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 73% 85%, 0% 100%);
+}
+section.freelancer h1{
+    color: var(--font1);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+section.freelancer p{
+    color: var(--font1);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 3.5rem;
+}
+section.freelancer a{
+    text-decoration: none;
+}
+section.client{
+    text-align: center;
+}
+/*-------This Class is from the Slick Slider Script. Its not visible in the index------*/
+
+section.client .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+section.client .slider-dots .dots button{
+    background: var(--font4);
+    font-size: 0;
+    height: 7px;
+    width: 15px;
+    margin-right: 7px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+section.client .slider-dots .dots li.slick-active button{
+    background: var(--accent);
+    width: 30px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+section.client .slider .slide{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    background: white;
+        
+}
+section.client .slider .slide img{
+    width: 30%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+section.client .slider .slide .review{
+    margin-bottom: 2rem;
+    color: var(--font4);
+    font-weight: 500;
+}
+section.client .slider .slide .name{
+    margin-bottom: 2rem;
+    color: var(--font2);
+    font-weight: 600;
+}
+
+
+section.work{
+    background: var(--canvas2);
+    justify-content: center;
+    align-items: center;
+}
+
+section.work .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+    width: 380px;
+}
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+section.work .card-wrapper .card .overlay a{
+    color: white;
+    text-decoration: none;
+}
+section.work .card-wrapper .card .overlay{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;;
+}
+section.blog{
+    background: var(--canvas1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 88%, 0% 100%);
+}
+section.blog .section-heading h1{
+    color: var(--font1);
+}
+section.blog .section-heading p{
+    color: var(--font1);
+}
+section.blog .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    margin-bottom: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+section.blog .card-wrapper .card{
+    background: white;
+    width: 350px;
+}
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem 2rem 2rem 2rem;
+}
+section.blog .card-wrapper .card .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.blog .card-wrapper .card .card-content a.heading{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--font2);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+section.blog .card-wrapper .card .card-content a.heading:hover{
+    color: var(--accent);
+}
+section.blog .card-wrapper .card .card-content .date{
+    color: var(--font4);
+    margin-bottom: 1.5rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    color: var(--font3);
+    margin-bottom: 1.5rem;
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+section.blog .card-wrapper .card .card-content a.read-more:hover{
+    color: var(--canvas1);
+}
+section.contact .icon-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+section.contact .icon-wrapper .i-card{
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+section.contact .icon-wrapper .i-card a{
+    text-decoration: none;
+    color: var(--font2);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    transition: all 0.5s ease;
+}
+section.contact .icon-wrapper .i-card h1{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+section.contact .icon-wrapper .i-card:hover h1{
+    color: var(--accent);
+}
+section.contact .icon-wrapper .i-card p{
+    color: var(--font4);
+}
+section.contact .icon-wrapper .i-card img{
+    margin-bottom: 1.5rem;
+    width: 100px;
+}
+section.contact .input-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+section.contact .input-1 input{
+    padding: 0.5rem;
+    border: 2px solid rgb(240, 240, 240);
+    font-size: 1.2rem;
+}
+section.contact .input-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-2 input{
+    padding: 00.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(240, 240, 240);
+    font-size: 1.2rem;
+}
+section.contact .input-2 textarea{
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgb(240, 240, 240);
+    font-size: 1.2rem;
+}
+section.contact input:focus{
+    outline: none;
+    background: rgb(240, 240, 240);
+}
+section.contact textarea:focus{
+    outline: none;
+    background: rgb(240, 240, 240);
+}
+section.contact .send{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.menu-bar i{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+.menu-bar-logo{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 150px;
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    header #main-menu{
+        display: none;
+    }
+    .c-btn{
+        display: none;
+    }
+    nav .menu-bar i{
+        display: block;
+        cursor: pointer;
+    }
+    nav .menu-bar-logo{
+        display: block;
+    }
+    nav .logo img{
+        display: none;
+    }
+    .shishir{
+        margin-top: 3rem;
+    }
+    .about-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.services .card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shishir{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .shishir .left img{
+        margin-top: 2rem;
+    }
+    section.contact .icon-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    section.blog{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 95%, 0% 100%);
+    }
+    
+    
+}
+
+@media (min-width: 768px) {
+    .box{
+        max-width: 720px;
+    }
+    
+    section.services .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+

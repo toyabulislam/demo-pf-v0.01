@@ -1,0 +1,146 @@
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+.items-right{
+    align-items: right;
+}
+.justify{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    
+}
+.btn-a{
+    background: var(--accent);
+    color: var(--canvas1);
+}
+
+.btn-a:hover{
+    background: transparent;
+    color: var(--accent);
+    border-color:var(--accent);
+}
+.btn-b{
+    background: transparent;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.btn-b:hover{
+    background: var(--accent);
+    color: var(--font1);
+    border-color:var(--accent);
+}
+span{
+    color: var(--accent);
+}
+
+section.services .card img{
+    background: var(--accent);
+    width: 70px;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -2.1rem;
+}
+section.services .card{
+    position: relative;
+}
+footer{
+    background: var(--canvas1);
+}
+
+footer .link a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+footer .link i{
+    color: var(--font1);
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+footer .end{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+footer .end .logo img{
+    margin-bottom: 3rem;
+    width: 300px;
+}
+footer .end .link{
+    margin-bottom: 2rem;
+}
+footer .end p{
+    color: var(--font4);
+}
+footer .link i:hover{
+   transform: translateY(-5px);
+}
+.menu-btn{
+    display: none;
+    
+}
+.mobile-nav li{
+    font-size: 50px;
+    font-weight: 500;
+}
+.mobile-nav a{
+    text-decoration: none;
+    color: var(--canvas1);
+}
+.mobile-nav .fas{
+    font-size: 50px;
+    margin-bottom: 2rem;
+    color: var(--canvas1);
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: rgb(255, 240, 245);
+    width: 50%;
+    height: 100%;
+    padding: 3rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+.open{
+    transform: translateX(0);
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2rem;
+    justify-content: center;
+}
+
+
+
+/*----------------------For Mobiles------------------------*/
+
+@media (min-width: 576px) {.box{ max-width: 540px; } }
+
+
+
+@media (min-width: 992px) {.box{ max-width: 960px; } }
+
+@media (min-width: 1200px) {.box{ max-width: 1152px; } }
+
+
